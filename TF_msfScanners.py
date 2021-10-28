@@ -31,7 +31,7 @@ def find_proto(proto_list: dict) -> list:
 	"""
 	for proto_name, proto_ports in proto_list.items():
 		command_list = []
-		proto_dir = "/usr/share/metasproto_listoit-framework/modules/auxiliary/scanner/" + proto_name.lower()
+		proto_dir = "/usr/share/metasploit-framework/modules/auxiliary/scanner/" + proto_name.lower()
 		rb_files = glob.glob(proto_dir + "*.rb")
 
 		for f in rb_files:
